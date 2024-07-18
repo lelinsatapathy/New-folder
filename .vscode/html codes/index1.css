@@ -1,0 +1,433 @@
+* {
+    margin:0;
+    font-family: arial;
+    border:border-box;
+
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display:flex; 
+    align-items: center;  /**cross axis elements will come to center that is from top to bottom**/
+    justify-content: space-evenly;
+
+
+}
+
+.nav-logo {
+    background-image: url("images2/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+
+
+.logo{
+    background-size: cover;
+    height:50px;
+    width: 100%;
+}
+
+.border{
+    border: 2px solid transparent;       
+}
+
+.border:hover {
+    
+    border: 1.5px solid white;
+}
+/** in the navbar we used display:flex which means all the contents in navbar will come in one line.**/
+
+/** we will add styling for box2 that is deliver to india.**/
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;  /**the content will shift 15px right**/
+}
+
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display:flex;  /**if under a div we want all contents to be in same line then we use this**/
+}
+
+/**box 3 **/
+
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width:620px;
+    height:40px;
+    border-radius:4px; /**border radius is applied because the whole nav-search part is curved a little at both ends **/
+    }
+
+.search-select{
+    background-color: #f3f3f3;
+    width:50px;
+    text-align: center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius: 4px;
+    border:none;  /** border between all and search amazon will be removed as by default select has a border**/
+}
+
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    border:none;
+
+}
+
+.search-icon{  /**this is for icon**/
+    width:45px;
+    display: flex; /**horizontal changes**/
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: rgb(255, 153, 0);
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color:#0f1111;
+}
+
+.nav-search:hover{
+    border:2px solid orange;
+}
+/**box4**/
+span{          /**we used span in html so we can directly assign styling here.it is applicable for all styling **/
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;   /**font weight means it will appear darker than earlier**/
+}
+
+/** box5**/
+
+.nav-cart i{  /**if properties of icon would likely to be change under a div tag then div tag with i will be written where i stands for icon**/
+    font-size:30px;
+}
+
+.nav-cart{
+    font-size:0.85rem;
+    font-weight:700;
+}
+
+/**panel**/
+
+.panel{
+    height:40px;
+    background-color: #222f3d;
+    display:flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display:inline;  /**all paragraphe in the panel ops  will come in one line**/
+    margin-left: 10px;  /**all content will move 10px right evenly keeping a space with each other**/
+}
+.panel-ops{
+    width:70%;
+    font-size: 0.85rem;
+}
+.Panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/** hero-section**/
+
+.hero-section{
+    background-image: url("images2/hero_image.png");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color:black;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color:#007185;
+}
+
+/** styling of ship section**/
+
+.shop-section{
+    display:flex;
+    flex-wrap: wrap;  /** all 8 images will get distribute evenly that is 4 in one row**/
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+
+}
+
+.box1{
+   /** border:2px solid black;**/
+    height:400px;
+    width:23%;
+    background-color: white;
+    padding:20px 0px 15px;
+    margin-top: 15px;
+}
+.box1-img{
+    background-image: url("images2/box1_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box1-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box1-content p{
+    color:#007185;
+}
+.box2{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box2-img{
+    background-image: url("images2/box2_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box2-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box2-content p{
+    color:#007185;
+}
+.box3{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box3-img{
+    background-image: url("images2/box3_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box3-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box3-content p{
+    color:#007185;
+}
+.box4{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box4-img{
+    background-image: url("images2/box4_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box4-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box4-content p{
+    color:#007185;
+}
+.box5{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box5-img{
+    background-image: url("images2/box5_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box5-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box5-content p{
+    color:#007185;
+}
+
+.box6{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box6-img{
+    background-image: url("images2/box6_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box6-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box6-content p{
+    color:#007185;
+}
+.box7{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box7-img{
+    background-image: url("images2/box7_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box7-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box7-content p{
+    color:#007185;
+}
+.box8{
+    /** border:2px solid black;**/
+     height:400px;
+     width:23%;
+     background-color: white;
+     padding:20px 0px 15px;
+     margin-top: 15px;
+ }
+.box8-img{
+    background-image: url("images2/box8_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.box8-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.box8-content p{
+    color:#007185;
+}
+/**.box-img{
+    background-image: url("images2/box4_image.png");
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+} **/
+
+/**.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}**/
+/**.box-content p{
+    color:#007185;
+}**/
+
+/** styling for footer section**/
+footer{
+    margin-top:15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.85rem;
+
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color:white;
+    height:500px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;  /** all will come in same line vertical**/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd;
+}
+.amz-sym {
+    font-size: 0.85rem;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white; /** it will draw line from bottom 0.5px size of white**/
+    width:100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url("images2/amazon_logo.png");
+    background-size: cover;
+    height:50px;
+    width: 100px;
+}

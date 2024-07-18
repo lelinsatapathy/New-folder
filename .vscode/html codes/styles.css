@@ -1,0 +1,10 @@
+.header {
+    background-image: url('images2/box1_image.png');
+    background-size: cover;
+    height: 200px;
+}
+
+.content {
+    background-image: url('images2/amazon_logo.png');
+    height: 300px;
+}
